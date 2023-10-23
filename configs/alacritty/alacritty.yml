@@ -1,0 +1,5 @@
+font:
+  size: 16
+
+import:
+  - ~/.config/alacritty/themes/themes/gnome_terminal.yaml

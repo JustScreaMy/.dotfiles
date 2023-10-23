@@ -1,0 +1,10 @@
+[init]
+	defaultBranch = master
+[user]
+	email = kropikuba@gmail.com
+	name = Jakub Kropáček
+[push]
+	autoSetupRemote = true
+
+[includeIf "gitdir:~/Repositories/OLC/**"]
+	path = ~/Repositories/OLC/.gitconfig
