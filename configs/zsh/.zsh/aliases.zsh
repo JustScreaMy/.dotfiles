@@ -20,3 +20,7 @@ alias dcu='docker compose up'
 alias dcud='docker compose up -d'
 alias dcd='docker compose down'
 alias dcl='docker compose ls'
+
+if [[ ! -z "$WAYLAND_DISPLAY" ]]; then
+	alias code='code --ozone-platform="wayland" --enable-features="WaylandWindowDecorations"'
+fi

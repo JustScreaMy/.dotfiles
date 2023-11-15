@@ -1,3 +1,10 @@
+### dotfiles specific things ###
+configs/tmux/plugins/tmux-*
+configs/gtk-3.0/bookmarks
+configs/micro/buffers
+configs/zsh/.zsh/.*
+!configs/zsh/.zsh/.zshrc
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/

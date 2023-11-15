@@ -1,3 +1,6 @@
+[core]
+	editor = "micro"
+
 [init]
 	defaultBranch = master
 [user]
