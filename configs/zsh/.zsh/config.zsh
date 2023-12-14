@@ -1,5 +1,4 @@
 fpath+=$ZSH/completions
-fpath+=/home/krop/.local/pipx/venvs/argcomplete/lib64/python3.11/site-packages/argcomplete/bash_completion.d
 
 #zshconf
 autoload -Uz vcs_info

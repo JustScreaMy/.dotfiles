@@ -33,3 +33,6 @@ if [[ -z "$TMUX" ]]; then
 	export PATH="$BUN_INSTALL/bin:$HOME/.cargo/bin:$HOME/.local/bin:$HOME/.local/share/JetBrains/Toolbox/scripts:/usr/local/go/bin:$PATH"
 	export GOPATH="$HOME/Repositories/go"
 fi
+
+# bun completions
+[ -s "/home/krop/.bun/_bun" ] && source "/home/krop/.bun/_bun"
