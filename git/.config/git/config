@@ -1,6 +1,3 @@
-[core]
-	editor = "micro"
-
 [init]
 	defaultBranch = master
 [user]
@@ -11,3 +8,12 @@
 
 [includeIf "gitdir:~/Repositories/OLC/**"]
 	path = ~/Repositories/OLC/.gitconfig
+
+[includeIf "gitdir:~/Repositories/OLC-Hexpol/**"]
+	path = ~/Repositories/OLC-Hexpol/.gitconfig
+[status]
+	submoduleSummary = true
+[diff]
+	submodule = log
+[core]
+	autocrlf = input

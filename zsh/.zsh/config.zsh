@@ -23,10 +23,3 @@ export HISTFILE=$ZSH/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=10000
 setopt HIST_SAVE_NO_DUPS
-
-
-# Editor config
-export EDITOR=$(which micro)
-
-# Theme
-source $ZSH/themes/minimal.zsh-theme

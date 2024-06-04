@@ -1,0 +1,4 @@
+import = ["/home/krop/.config/alacritty/themes/themes/gnome_terminal.toml"]
+
+[font]
+size = 16
