@@ -2,7 +2,7 @@ alias lg='lazygit'
 alias cls='clear'
 alias open='xdg-open'
 alias fire='firefox'
-alias s='kitty +kitten ssh'
+#alias s='kitty +kitten ssh'
 alias la='ls -al --color=auto'
 
 # Git
@@ -11,16 +11,27 @@ alias ga='git add'
 alias gaa='git add --all'
 
 # Cargo
-alias cr='cargo run'
-alias cb='cargo build'
-alias ct='cargo test'
+alias cg-run='cargo run'
+alias cg-build='cargo build'
+alias cg-test='cargo test'
+
 
 # Docker Compose
-alias dcu='docker compose up'
-alias dcud='docker compose up -d'
-alias dcd='docker compose down'
-alias dcl='docker compose ls'
+alias dc='docker compose'
+alias dc-build='dc build'
+alias dc-run='dc run --rm'
+alias dc-runr='dc-run -u root'
+alias dc-up='dc up'
+alias dc-upd='dc up -d'
+alias dc-down='dc down'
+alias dc-ls='dc ls'
+alias dc-pull='dc pull'
 
-if [[ ! -z "$WAYLAND_DISPLAY" ]]; then
-	alias code='code --ozone-platform="wayland" --enable-features="WaylandWindowDecorations"'
-fi
+# Docker Stack
+alias ds-env='env $(cat .env | grep "^[A-Z]" | xargs) docker stack'
+
+# Navigation
+alias ..='cd ..'
+
+# Bitwarden
+alias bw-unlock='BW_SESSION=$(bw unlock --raw) && export BW_SESSION'
