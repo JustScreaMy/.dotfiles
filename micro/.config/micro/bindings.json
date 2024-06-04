@@ -1,6 +1,13 @@
 {
     "Alt-/": "lua:comment.comment",
+    "Alt-d": "command:definition",
+    "Alt-f": "command:format",
+    "Alt-k": "command:hover",
+    "Alt-r": "command:references",
     "CtrlDown": "ParagraphNext",
+    "CtrlSpace": "command:lspcompletion",
     "CtrlUnderscore": "lua:comment.comment",
-    "CtrlUp": "ParagraphPrevious"
+    "CtrlUp": "ParagraphPrevious",
+    "Ctrl-l": "command:lower",
+    "Ctrl-u": "command:upper"
 }
