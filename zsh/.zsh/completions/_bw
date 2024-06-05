@@ -142,11 +142,11 @@ function _bw_login {
 }
 
 function _bw_logout {
-  
+
 }
 
 function _bw_lock {
-  
+
 }
 
 function _bw_unlock {
@@ -186,7 +186,7 @@ function _bw_generate {
 }
 
 function _bw_encode {
-  
+
 }
 
 function _bw_config {
@@ -203,7 +203,7 @@ function _bw_config {
 }
 
 function _bw_update {
-  
+
 }
 
 function _bw_completion {
@@ -214,7 +214,7 @@ function _bw_completion {
 }
 
 function _bw_status {
-  
+
 }
 
 function _bw_serve {
@@ -273,11 +273,11 @@ function _bw_delete {
 }
 
 function _bw_restore {
-  
+
 }
 
 function _bw_move {
-  
+
 }
 
 function _bw_confirm {
@@ -306,7 +306,7 @@ function _bw_export {
 }
 
 function _bw_share {
-  
+
 }
 
 function _bw_send {
@@ -369,11 +369,11 @@ function _bw_send {
 }
 
 function _bw_send_list {
-  
+
 }
 
 function _bw_send_template {
-  
+
 }
 
 function _bw_send_get {
@@ -413,11 +413,11 @@ function _bw_send_edit {
 }
 
 function _bw_send_remove-password {
-  
+
 }
 
 function _bw_send_delete {
-  
+
 }
 
 function _bw_receive {
