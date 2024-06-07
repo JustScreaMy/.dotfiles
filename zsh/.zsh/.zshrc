@@ -36,7 +36,12 @@ function getpgadmin() {
 
 # Zoxide
 # TODO: exec only if installed
-eval "$(zoxide init zsh --cmd cd)"
+
+which zoxide >/dev/null 2>&1
+ret=$?
+if [[ $ret == 0 ]]; then
+	eval "$(zoxide init zsh --cmd cd)"
+fi
 
 # Theme
 source $ZSH/themes/minimal.zsh-theme

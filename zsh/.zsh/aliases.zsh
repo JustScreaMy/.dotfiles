@@ -35,3 +35,6 @@ alias ..='cd ..'
 
 # Bitwarden
 alias bw-unlock='BW_SESSION=$(bw unlock --raw) && export BW_SESSION'
+
+# tmux
+alias t="tmux"
