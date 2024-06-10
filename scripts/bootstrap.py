@@ -18,7 +18,7 @@ def get_virtualenv_pyz(dir_path: Path) -> Path:
 
 
 def init_pipx(venv_pyz_path: Path) -> list[Path]:
-    print("Initing pipx")
+    print("Initializing pipx")
     sp.check_output(
         [sys.executable, venv_pyz_path, PIPX_LOCAL_DIR],
         stderr=sp.STDOUT,
