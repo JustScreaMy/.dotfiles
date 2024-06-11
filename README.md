@@ -8,4 +8,3 @@
 ## Packages
 - lazygit
 - lazydocker
-

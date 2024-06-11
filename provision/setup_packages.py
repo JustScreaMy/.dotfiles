@@ -11,7 +11,7 @@ def deploy_packages():
         "docker-buildx-plugin",
         "docker-compose-plugin",
     ]
-    
+
     cli_apps = [
         "zsh",
         "tmux",
@@ -28,24 +28,24 @@ def deploy_packages():
         "python3.10",
         "podman-compose",
         "fzf",
-        *docker
+        *docker,
     ]
 
     dnf.packages(
         name="Installing cli applications",
         packages=cli_apps,
-        _sudo=True
+        _sudo=True,
     )
 
     gui_apps = [
         "ulauncher",
-        "alacritty"
+        "alacritty",
     ]
-    
+
     dnf.packages(
         name="Installing gui applications",
         packages=gui_apps,
-        _sudo=True
+        _sudo=True,
     )
 
     # TODO: add flatpaks too
