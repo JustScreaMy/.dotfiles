@@ -17,7 +17,7 @@ def get_virtualenv_pyz(dir_path: Path) -> Path:
     return dir_path / "virtualenv.pyz"
 
 
-def init_pipx(venv_pyz_path: Path) -> list[Path]:
+def init_pipx(venv_pyz_path: Path) -> tuple[Path, Path]:
     print("Initializing pipx")
     sp.check_output(
         [sys.executable, venv_pyz_path, PIPX_LOCAL_DIR],
@@ -32,10 +32,10 @@ def init_pipx(venv_pyz_path: Path) -> list[Path]:
         stderr=sp.STDOUT,
     )
 
-    return [
+    return (
         Path(PIPX_LOCAL_DIR) / "bin" / "pipx",
         Path(PIPX_LOCAL_DIR) / "bin" / "virtualenv",
-    ]
+    )
 
 
 def symlink_executables(executables: list[Path]):
@@ -50,11 +50,11 @@ def symlink_executables(executables: list[Path]):
 def main() -> int:
     with tempfile.TemporaryDirectory() as dirname:
         print(f"Created tmpdir -> {dirname}")
-        virtualenv_path = get_virtualenv_pyz(Path(dirname))
-        print(f"Installed temporary virtualenv.pyz to {virtualenv_path}")
-        executables = init_pipx(virtualenv_path)
+        virtualenv_pyz_path = get_virtualenv_pyz(Path(dirname))
+        print(f"Installed temporary virtualenv.pyz to {virtualenv_pyz_path}")
+        pipx_path, virtualenv_path = init_pipx(virtualenv_pyz_path)
     print("Symlinking executables")
-    symlink_executables(executables)
+    symlink_executables([pipx_path, virtualenv_path])
     return 0
 
 

@@ -1,5 +1,5 @@
 [submodule "configs/tmux/plugins/tpm"]
-	path = tmux/.config/tmux/plugins/tpm
+	path = terminal/.config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
 [submodule "configs/alacritty/themes"]
 	path = gui/.config/alacritty/themes
