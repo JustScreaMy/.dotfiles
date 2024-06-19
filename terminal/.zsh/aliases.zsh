@@ -15,7 +15,6 @@ alias cg-run='cargo run'
 alias cg-build='cargo build'
 alias cg-test='cargo test'
 
-
 # Docker Compose
 alias dc='docker compose'
 alias dc-build='dc build'
@@ -38,3 +37,6 @@ alias bw-unlock='BW_SESSION=$(bw unlock --raw) && export BW_SESSION'
 
 # tmux
 alias t="tmux"
+
+# pre-commit
+alias pc="pre-commit"
