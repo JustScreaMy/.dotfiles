@@ -40,3 +40,6 @@ alias t="tmux"
 
 # pre-commit
 alias pc="pre-commit"
+
+#Toolbox
+alias tb="toolbox"

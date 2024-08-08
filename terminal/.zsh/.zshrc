@@ -19,6 +19,7 @@ function addtopathifexists() {
 		export PATH="$1:$PATH"
 	fi
 }
+
 # Functions
 function getnvm() {
 	execifexists ~/.nvm/nvm.sh nvm
@@ -29,10 +30,6 @@ function getrvm() {
     execifexists ~/.rvm/scripts/rvm rvm
 }
 execifexists ~/.rvm/scripts/rvm rvm
-
-function getpgadmin() {
-	podman run -p8080:80 -ePGADMIN_DEFAULT_EMAIL=krop@krop.cz -ePGADMIN_DEFAULT_PASSWORD=krop --rm dpage/pgadmin4
-}
 
 # Zoxide
 # TODO: exec only if installed
@@ -56,8 +53,6 @@ if [[ -z "$TMUX" ]]; then
 	addtopathifexists ~/.local/share/JetBrains/Toolbox/scripts
 
 	export BUN_INSTALL="$HOME/.bun"
-
 	export PATH="$BUN_INSTALL/bin:$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/go/bin:$PATH"
-
 	export GOPATH="$HOME/Repositories/go"
 fi
